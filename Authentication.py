@@ -6,7 +6,7 @@ from DBMS_Project import *
 
 class Authentication:
     user = 'admin'
-    passw = 'admin'
+    passw = 'johnson'
     def __init__(self,root):
 
         self.root = root
@@ -55,7 +55,7 @@ class Authentication:
             
             #Open new window
             newroot = Tk()
-            application = School_Portal(newroot)
+            application = employee(newroot)
             newroot.mainloop()
 
 
@@ -66,8 +66,7 @@ class Authentication:
             self.message['text'] = 'Username or Password incorrect. Try again!'
 
 
-    def face_unlock(self):
-        self.message['text'] = 'Be Patient! Developer working hard to push this feature..'
+    
 
 
 
